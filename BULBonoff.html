@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Buyser">
+    <meta http-equiv="refresh" content="1000">
+    <link rel="stylesheet" type="text/css" href="BULBonoff.css">
+    <link rel="icon" type="image/x-icon" href="hacker.png">
+    <meta name="keywords" content="JavaScript, Bulb on and off using JS">
+    <title>JavaScript Activity 2 Bulb on and off</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Turn off and on Bulb using JS:</h1>
+
+        <div class="img-container">
+            <img src="bulboff.png" alt="Tuned off lightbulb" id="image">
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="btn1()" type="button">TURN ON</button>
+            <button class="btn" onclick="btn2()" type="button">TURN OFF</button>
+        </div>
+    </div>
+</body>
+<script>
+    function btn1() {
+        document.getElementById('image').src='bulbon.png';
+    }
+
+    function btn2() {
+        document.getElementById('image').src='bulboff.png';
+    }
+</script>
+</html>
